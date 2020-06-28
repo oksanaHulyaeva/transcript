@@ -10,7 +10,7 @@ The main benefits we expect to get from design patterns are the following:
 * And besides that, patterns are usually expressive – they can express a large solution quite elegantly and let to reduce the amount of code.
 
 #### III slide
-Design patterns can be categorized in multiple ways, but the most popular one is the following:
+Design patterns can be categorized in multiple ways, but the most popular approach is dividing them into:
 *	Creational design patterns
 *	Structural design patterns
 *	Behavioral design patterns
