@@ -41,16 +41,12 @@ Another area where Facade is widely used is refactoring. Suppose you have a conf
 So let’s see how it works.
 Here we have some complex class with a pretty quite a lot of methods. The second class is *ConveyorFacade*,  that can receive some object (with its own methods) as a parameter. This class contains just one method *assembleCar()*, which consistently calls some methods of the received object to build entire car as a result.
 
-So if we create a new instance of *ConveyorFacade* with a new *Conveyor* as a parameter we need just one more call to get our car assembled – all we need is too invoke the method *assembleCar()* for our new conveyor  object. Convenient isn't it?
+So if we create a new instance of *ConveyorFacade* with a new *Conveyor* as a parameter we need just one more call to get our car assembled – all we need is to invoke the method *assembleCar()* for our new conveyor  object. Convenient isn't it?
 
 #### VIII slide
 And the last – but not least – method is a **Flyweight**.
 
 The Flyweight pattern is a classical structural solution for optimizing code that is repetitive, slow and has inefficient data organization. Flyweight helps to optimize the usage of memory in applications by sharing as much data as possible with related objects. Shared flyweight objects have to be immutable, cause they represent some common for many others objects properties.
-
-There are two ways in which the Flyweight pattern can be applied. The first is at the data-layer, where we deal with the concept of sharing data between large quantities of similar objects stored in memory.
-
-The second is at the DOM-layer where the Flyweight can be used as a central event-manager to avoid attaching event handlers to every child element in a parent container we wish to have some similar behavior.
 
 Let’s look at the scheme. The main elements here are the *Client*, *FlyweightFactory* and *Flyweight* object itself. The Client calls into FlyweightFactory to get flyweight objects. The FlyweightFactory serves for creating and managing Flyweight objects and the Flyweight maintains specified data to be shared across the application.
 
